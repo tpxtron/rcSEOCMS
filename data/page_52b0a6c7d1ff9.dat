@@ -1,0 +1,24 @@
+{
+	"config": {
+		"type": "index",
+	},
+	"page": {
+		"head" : {
+			"title": "rcSEOCMS Demonstrationsseite",
+			"description": "Mit der rcSEOCMS Demonstrationsseite zeigen wir Ihnen, wie ein Musterprojekt aussehen könnte.",
+			"keywords": "test,demo,demonstration,demoseite,demonstrationsseite"
+		}
+	},
+	"headline":"Seitentitel",
+	"intro":"Dieser Text ist das Intro der Seite",
+	"panels" : [
+		{
+			"title":"Eins",
+			"content":"Erster Inhalt für einen Kasten auf der Indexseite. <a href=\"/seite/eins.html\">Seite Eins anzeigen</a>"
+		},
+		{
+			"title":"Zwei",
+			"content":"Zweiter Inhalt für einen Kasten auf der Indexseite. <a href=\"/zwei/index.html\">Seite Zwei anzeigen</a>"
+		}
+	]
+}

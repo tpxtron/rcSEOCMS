@@ -1,0 +1,15 @@
+{
+	"Startseite": {
+		"route": "/"
+	}
+	"Seiten": {
+		"submenu": [
+			"Eins": {
+				"route": "/seite/eins.html"
+			},
+			"Zwei": {
+				"route": "/zwei/index.html"
+			}
+		]
+	}
+}

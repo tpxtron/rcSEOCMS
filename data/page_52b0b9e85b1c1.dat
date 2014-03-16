@@ -1,0 +1,18 @@
+{
+	"config": {
+		"type": "default",
+	},
+	"page": {
+		"head" : {
+			"title": "Standardseite",
+			"description": "Das hier ist eine Standardseite",
+			"keywords": "test,demo,standardseite"
+		}
+	},
+	"headline":"Standardseite",
+	"panels" : [
+		{
+			"content":"<p>Dies ist eine Standardseite. Sie können die Seite völlig frei gestalten, z.B. mit einem Infokasten:</p><div class=\"alert alert-info\">Infokasten</div><p>...oder aber auch mit einem Bild:</p>"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"config": {
+		"type": "contact",
+		"recipient": "mail@example.com"
+	},
+	"page": {
+		"head" : {
+			"title": "Kontaktformular-Seite",
+			"description": "Das hier ist eine Kontakformularseite zu Demonstrationszwecken",
+			"keywords": "test,demo,kontakt,formular,kontaktformular,kontakt formular"
+		}
+	},
+	"headline":"Kontakformular",
+	"panels" : [
+		{
+			"content":"<p>Nehmen Sie Kontakt mit uns auf!</p>"
+		}
+	],
+}
