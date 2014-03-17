@@ -1,0 +1,37 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+	{% for panel in panels %}
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="panel panel-default">
+						{% if panel.title %}
+							<div class="panel-heading">
+								<h3 class="panel-title">{{ panel.title }}</h3>
+							</div>
+						{% endif %}
+						<div class="panel-body">
+							{{ panel.content }}
+							<form method="post" role="form">
+								<div class="form-group">
+									<label for="name">Ihr Name:</label>
+									<input type="text" name="name" width="50%" class="form-control" />
+								</div>
+								<div class="form-group">
+									<label for="email">Ihre Email-Adresse:</label>
+									<input type="email" name="email" width="50%" class="form-control" />
+								</div>
+								<div class="form-group">
+									<label for="anfrage">Ihre Anfrage:</label>
+									<textarea rows="10" width="50%" name="anfrage" class="form-control"></textarea>
+								</div>
+								<button type="submit" class="btn btn-default">Anfrage absenden</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+{% endblock %}

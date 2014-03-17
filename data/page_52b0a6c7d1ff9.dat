@@ -1,6 +1,6 @@
 {
 	"config": {
-		"type": "index",
+		"type": "index"
 	},
 	"page": {
 		"head" : {

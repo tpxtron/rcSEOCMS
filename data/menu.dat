@@ -1,15 +1,23 @@
 {
-	"Startseite": {
-		"route": "/"
-	}
-	"Seiten": {
-		"submenu": [
-			"Eins": {
-				"route": "/seite/eins.html"
-			},
-			"Zwei": {
-				"route": "/zwei/index.html"
+	"logo": "rcSEOCMS",
+	"left": {
+		"Startseite": {
+			"route": "/"
+		}
+	},
+	"right": {
+		"Seiten": {
+			"submenu": {
+				"Eins": {
+					"route": "/seite/eins.html"
+				},
+				"-": {
+					"divider": true
+				},
+				"Zwei": {
+					"route": "/zwei/index.html"
+				}
 			}
-		]
+		}
 	}
 }

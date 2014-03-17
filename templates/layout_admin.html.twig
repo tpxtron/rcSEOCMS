@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ page.config.html_lang }}">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{ page.head.title|default(page.head.default_title) }}{{ page.head.title_suffix|default(page.head.default_title_suffix) }}</title>
+	<title>rcSEOCMS Admin Panel</title>
 
 	<meta name="generator" content="rcSEOCMS">
-	<meta name="author" content="{{ page.head.author|default(page.head.default_author) }}">
 
 {# Bootstrap3 #}
 {# Latest compiled and minified CSS #}
@@ -28,30 +26,37 @@
 </head>
 <body>
 
-{% block menu %}
-{% include("menu.html.twig") %}
-{% endblock %}
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+				<span class="sr-only">Navigation auf/zuklappen</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/admin">rcSEOCMS Administration</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navi">
+			<ul class="nav navbar-nav navbar-left">
+				<li{% if action == "menu" %} class="active"{% endif %}><a href="/admin/menu">Menu</a></li>
+				<li{% if action == "content" %} class="active"{% endif %}><a href="/admin/content">Content</a></li>
+				<li{% if action == "files" %} class="active"{% endif %}><a href="/admin/files">Files</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
 
-{% block header %}
-{% endblock %}
-
-{% block headline %}
+<div class="jumbotron">
 	<div class="container">
-		<h1>{{ headline }}</h1>
+		<h1>rcSEOCMS Administration</h1>
+		{% if action %}
+			<h2>{{ action }}</h2>
+		{% endif %}
 	</div>
-{% endblock %}
+</div>
 
 {% block content %}{% endblock %}
-
-{% block footer %}
-	<footer>
-		<div class="footer">
-			<div class="container">
-				<p>&copy; 2014 Your Company</p>
-			</div>
-		</div>
-	</footer>
-{% endblock %}
 
 {# JavaScript always before the page end to improve loading speeds #}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
