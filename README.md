@@ -12,7 +12,7 @@ Installation manual
 2a. If necessary, also change the file owners to www-data ("chmod -R www-data:www-data data")
 3. Edit config.ini and follow the instructions
 4. Point your webserver's root directory to public/
-5. Set up URL rewriting according to REWRITE_CONFIG in your webserver
+5. Set up URL rewriting according to URL Rewriting Configuration (see below) in your webserver
 6. You can find your administration interface in /admin/
 
 
@@ -25,7 +25,7 @@ Installationsanleitung
 2a. Wenn nötig auch den Inhaber der Dateien auf www-data ändern ("chmod -R www-data:www-data data")
 3. config.ini editieren und den Anweisungen dort folgen
 4. Webserver-Rootverzeichnis auf public/ setzen
-5. URL-Rewriting gemäß REWRITE_CONFIG im Webserver einrichten
+5. URL-Rewriting gemäß URL Rewriting Configuration (siehe unten) im Webserver einrichten
 6. Administrationsoberfläche ist unter /admin/ zu finden
 
 
