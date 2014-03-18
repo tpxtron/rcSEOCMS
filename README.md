@@ -36,15 +36,15 @@ URL Rewriting configuration
 apache
 -------
 Add the following 3 lines to your website's virtual host configuration file:
-
+```
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ /index.php [QSA]
-
+```
 
 lighttpd
 ---------
 Add following line into your website's virtual host configuration file:
-
+```
 url.rewrite-if-not-file = ("(.*)" => "/index.php/$0")
-
+```
